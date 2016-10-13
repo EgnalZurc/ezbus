@@ -1,0 +1,10 @@
+NAME=ezbus
+GCC=g++
+SRC=./src
+TARGET=$(SRC)/main.cpp $(SRC)/logging/LOG.cpp
+OUT=./out
+OBJ=-o $(OUT)/$(NAME)
+
+all:
+	mkdir -p $(OUT)
+	$(GCC) $(TARGET) $(OBJ)
